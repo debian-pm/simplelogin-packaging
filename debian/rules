@@ -1,12 +1,18 @@
 #!/usr/bin/make -f
+DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 
 %:
 	dh $@ --with sodeps --parallel
 
 override_dh_auto_configure:
+	sed -i -e s/arm-linux-gnueabihf/$${DEB_HOST_MULTIARCH}/g kwinwrapper
 	dh_auto_configure -- -DCMAKE_BUILD_TYPE=RelWithDebInfo
 
 override_dh_systemd_start:
 	dh_systemd_start -psimplelogin --no-start -r simplelogin.service
+
+override_dh_auto_clean:
+	sed -i -e s/$${DEB_HOST_MULTIARCH}/arm-linux-gnueabihf/g kwinwrapper
+	dh_auto_clean
 
 .PHONY: override_dh_auto_test

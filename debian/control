@@ -5,8 +5,10 @@ Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 XSBC-Original-Maintainer: Boudewijn Rempt <boud@kde.org>
 Build-Depends: cmake (>= 2.6.3),
                debhelper (>= 11),
+               dpkg-dev,
                dh-systemd [linux-any],
                libpam0g-dev,
+               systemd,
                libsystemd-dev,
                pkg-config,
                pkg-kde-tools (>= 0.9),
