@@ -1,3 +1,9 @@
+simplelogin (0.0.6+git20180314-1) UNRELEASED; urgency=medium
+
+  * New upstream snapshot
+
+ -- JBBgameich <jbb.mail@gmx.de>  Wed, 14 Mar 2018 17:12:20 +0100
+
 simplelogin (0.0.6+kubuntu20150610-0ubuntu1~ppa1) vivid; urgency=medium
 
   * New snapshot
