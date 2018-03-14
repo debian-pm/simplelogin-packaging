@@ -17,6 +17,6 @@ Standards-Version: 4.1.3
 Package: simplelogin
 Architecture: any
 Depends: libpam-runtime, ${misc:Depends}, ${shlibs:Depends}
-Homepage: https://cgit.kde.org/scratch/davidedmundson/simplelogin.git/
+Homepage: https://github.com/bhush9/simplelogin
 Description: Simple Login
  A trivial login manager without UI useful on embedded devices.
