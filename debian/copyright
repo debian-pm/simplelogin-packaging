@@ -1,10 +1,31 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Simple Login
 
-Files: *
-Copyright: 2013-2015 Blue Systems GmbH
- 2014 Martin Bříza <mbriza@redhat.com>
- 2015 Jonathan Riddell <jr@jriddell.org>
+Files: UserSession.h
+Copyright: 2013, 2014, Martin Bříza <mbriza@redhat.com>
+License: GPL-2+
+
+Files: VirtualTerminal.cpp
+  VirtualTerminal.h
+Copyright: 2015, Pier Luigi Fiorini <pierluigi.fiorini@gmail.com>
+License: GPL-2+
+
+Files: backend/*
+Copyright: 2013, 2014, Martin Bříza <mbriza@redhat.com>
+License: GPL-2+
+
+Files: kwinwrapper
+Copyright: 2015, Jonathan Riddell <jr@jriddell.org>
+  2014, Martin Bříza <mbriza@redhat.com>
+  2013-2015, Blue Systems GmbH
+License: UNKNOWN
+ Please fill license UNKNOWN from header of kwinwrapper
+
+Files: debian/*
+Copyright: Copyright 2015 Blue Systems GmbH
+License: GPL-2+
+ Please fill license UNKNOWN from header of debian/*
+
 License: GPL-2+
  This program is free software; you can redistribute it
  and/or modify it under the terms of the GNU General Public
@@ -26,7 +47,3 @@ License: GPL-2+
  On Debian systems, the full text of the GNU General Public
  License version 2 can be found in the file
  `/usr/share/common-licenses/GPL-2'.
-
-Files: debian/*
-Copyright: Copyright 2015 Blue Systems GmbH
-License: GPL-2+
